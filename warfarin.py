@@ -106,7 +106,7 @@ def convert_to_feature_matrix(warfarin_frame):
 		r.extend(one_hot_am[i])
 		r.extend(one_hot_gender[i])
 		# add bias
-		# r.append(1)
+		r.append(1)
 		m.append(r)
 	mat = np.array(m)
 	print(mat.shape)
